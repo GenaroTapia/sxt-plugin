@@ -6,6 +6,13 @@ plugins {
 group = "com.sicarx"
 version = "1.0.0"
 
+
+repositories {
+    mavenCentral()
+    gradlePluginPortal()
+}
+
+
 gradlePlugin {
     plugins {
         create("listenerPlugin") {
