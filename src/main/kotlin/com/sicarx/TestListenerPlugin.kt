@@ -1,3 +1,5 @@
+package com.sicarx
+
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.tasks.testing.Test
@@ -5,7 +7,7 @@ import org.gradle.api.tasks.testing.TestListener
 import org.gradle.api.tasks.testing.TestResult
 import org.gradle.api.tasks.testing.TestDescriptor
 
-class CustomTestPlugin : Plugin<Project> {
+class TestListenerPlugin : Plugin<Project> {
     override fun apply(project: Project) {
         project.tasks.withType(Test::class.java).configureEach {
             useJUnitPlatform()
